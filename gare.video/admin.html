@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Gare.video</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .div-admin{position: absolute;top: 0;left: 0;width: 100%;height: 90px;background-color: rgb(34, 34, 34);}
+        .span{position: absolute;top:20px;left: 590px;z-index: 9;color: white;font-size: 30px;}
+        .name-film{position: absolute;top:120px;left: 590px;width: 400px;}
+        .img-film{position: absolute;top: 198px;left: 590px;}
+        .raiting-gilm{position: absolute;top: 276px;left: 590px;}
+        .youtubyLink{position: absolute;top: 354px;left:590px}.amazonLink{position: absolute;top:432px;left: 590px;}
+        .netflixlink{position: absolute;top: 510px;left: 590px;}.yandexLink{position: absolute;top:588px;left: 590px;}
+        input{width: 400px;height: 38px;border-radius: 1px;border: 1px solid black;}.btn{position: absolute;top:666px;left:680px;}
+    </style>
+</head>
+<body>
+    <div class="div-gare-admin">
+        <div class="div-admin">
+            <div class="span">Admin Панель для Gare.video</div>
+        </div>
+        <div class="div-inputsTodb">
+            <form method="post" action="todb.php">
+                <input class="name-film"  name="nameFilm"placeholder="Название фильма" maxlength="70">
+                <input class="img-film" name="imgFilm" placeholder="Ссылка на обложку фильма" maxlength="300">
+                <input class="raiting-gilm" name="raitingFilm" placeholder="Рейтинг фильма" maxlength="4">
+                <input class="youtubyLink" name="youtubyLink" placeholder="Ссылка на Ютуб" maxlength="300">
+                <input class="amazonLink" name="amazonLink" placeholder="Ссылка на AmazonPrime" maxlength="300">
+                <input class="netflixlink" name="netflixLink" placeholder="Ссылка на Netflix" maxlength="300">
+                <input class="yandexLink" name="yandexLink" placeholder="Ссылка на Кинопоиск" maxlength="300">
+                <button type="submit" class="btn">Отпарвить в базу данных</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
