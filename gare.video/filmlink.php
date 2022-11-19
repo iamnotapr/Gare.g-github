@@ -13,9 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://github.com/iamnotapr/pictures/blob/main/gare.png?raw=true" />
     <title><?= $movie['name_film'] ?></title>
     <style>
-        .head-div{position: absolute;top:0;left: 0;width: 100%;height: 60px;border-bottom: 1px solid black;background-color: rgb(34, 34, 34);}
+        .head-div{position: fixed;top:0;left: 0;width: 100%;height: 60px;border-bottom: 1px solid black;background-color: rgb(34, 34, 34);}
     .div-input{position: absolute;top:13px;left: 250px;height: 35px;width: 1000px;background-color: deepskyblue;border-radius: 7px;z-index: 99;}
     body{background-color: rgb(80, 80, 80);}.select-class{position: absolute;top:1.7px;left: 2px;width: 130px;height: 31px;border-radius: 5px;border: 1.5px solid deepskyblue;}
     .div-input-i{position: absolute;top:1.8px;left: 3.2px;width: 943px;height: 31px;z-index: 99;border: 1.5px solid deepskyblue;border-radius: 7px;}
@@ -25,7 +26,10 @@
     .div-inc-another{position: absolute;top:60px;left: 0;width: 100%;height: 50px;background-color: rgb(121, 121, 121);z-index: 99;}
     .text-about{position:absolute;top:0px;left:60px;color:white;width:800px}
     .div-mainBody{position:absolute;top:120px;left:150px;}.imgmovie{position:absolute;width:400;height:380px}
-    .div-titleFilm{position:absolute;left:350px;top:20px;color:white;width:600px;height:30px}
+    .div-imgFilm{position:absolute;top:45px;left:50px;border-radius:10px;}
+    .div-titleFilm{position:absolute;left:350px;top:40px;color:white;width:800px;height:30px}
+    .div-raitingWord{position:absolute;top:100px;color:white;left:350px;font-size:20px;width:200px;height:10px;}
+    .div-span-number{position:absolute;top:102px;left:520px;font-size:20px;height:30px;width:80px;background-color:deepskyblue;border-radius:15px;text-align:center;color:white;}
     </style>
 </head>
 <body>

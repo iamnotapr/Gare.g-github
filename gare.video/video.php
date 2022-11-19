@@ -14,11 +14,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://github.com/iamnotapr/pictures/blob/main/gare.png?raw=true" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Gare.g</title>
     <style>
-    .head-div{position: absolute;top:0;left: 0;width: 100%;height: 60px;border-bottom: 1px solid black;background-color: rgb(34, 34, 34);}
+    .head-div{position: fixed;top:0;left: 0;width: 100%;height: 60px;border-bottom: 1px solid black;background-color: rgb(34, 34, 34);z-index: 999;}
     .div-input{position: absolute;top:13px;left: 250px;height: 35px;width: 1000px;background-color: deepskyblue;border-radius: 7px;z-index: 99;}
     body{background-color: rgb(80, 80, 80);}.select-class{position: absolute;top:1.7px;left: 2px;width: 130px;height: 31px;border-radius: 5px;border: 1.5px solid deepskyblue;}
     .div-input-i{position: absolute;top:1.8px;left: 3.2px;width: 943px;height: 31px;z-index: 99;border: 1.5px solid deepskyblue;border-radius: 7px;}
@@ -27,18 +28,23 @@
     .video-s{position: absolute;left: 45px;color: deepskyblue;}.div-link-gare{position: absolute;top:35px;left: 40px;color: tomato;font-size: 12px;}
     .div-inc-another{position: absolute;top:60px;left: 0;width: 100%;height: 50px;background-color: rgb(121, 121, 121);z-index: 99;}
     .shop{position: absolute;top:-2px;left: 50px;color: tomato;z-index: 99;font-size: 15px;text-decoration: none;}.shop:hover{color: white;text-decoration: none;}
-    .footer-nav{position: absolute;top:3700px;left: 0;width: 100%;height: 100px;background-color: rgb(34, 34, 34)}
+    .footer-nav{position: absolute;top:3700px;left: 0;width: 100%;height: 100px;background-color: rgb(34, 34, 34);z-index:999;}
     .support{position: absolute;top:80px;left:0;width: 100%;height: 57px;border-bottom: 1px solid white;}
     .text-sup{position: absolute;top:7px;left: 5px;color: white;}
     .div-class-film{position: absolute;top:100px;left:40px;width: 200px;height: 250px;background: grey;}
-    .film-conteiner{position:absolute;left:15px;top:130px;width:1400px;height:2200px;display: grid;grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));list-style-type:none;
+    .film-conteiner{position:absolute;left:275px;top:130px;width:1100px;height:2200px;display: grid;grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));list-style-type:none;
 grid-gap: 45px;}
-    .item{width:200px;height:320px;background-color: rgb(34, 34, 34);padding:10px;}
+    .item{width:200px;height:320px;background-color: rgb(34, 34, 34);padding:10px;border-radius:5px;}
     .img-filmphp{width:180px;height:230px;}.raiting-film{z-index: 9;color:white;}
     .span-name{z-index: 9;color: white;}.hide{display:none;}
-    .privacy-link{position:absolute;top:35px;left:450px;color:white}
+    .privacy-link{position:absolute;top:35px;left:250px;color:white}
     .text-about{position:absolute;top:0px;left:60px;color:white;width:800px}
-    .support-nav{position:absolute;top:35px;left:850px;color:white;}
+    .support-nav{position:absolute;top:35px;left:650px;color:white;}
+    .company-div{position:absolute;top:35px;right:250px;color:white;}
+    a:hover{color:tomato;}
+    .div-white-block{position:fixed;left:100px;top:60px;height:100%;width:200px;background:rgb(34, 34, 34);z-index: 99;}
+    .main-link{position:absolute;top:150px;left:40px;color:white;font-size:20px;}.main-link:hover{color:rgb(192, 192, 192);}
+    .we-like{position:absolute;left:40px;color:white;font-size:20px;top:190px;}
     </style>
 </head>
 <body>
@@ -97,14 +103,25 @@ grid-gap: 45px;}
        </div>
    </nav>
 
+                    <!--OUR-->
 
 
+    <div class="div-our-nav">
+        <div class="div-white-block">
+            <div class="div-links">
+                    <a href="#" style="text-decoration:underline tomato 3px " class="main-link">Главная</a>
+                    <a href="#" class="we-like">Нам нравится</a>
+            </div>
+        </div>
+    </div>
 
+                    <!--footer-->
    <div class="footer-nav">
        <div class="links">
            <a href="" class="privacy-link">Политика/конфидицеальность</a>
        </div>
        <a class="support-nav" href="https://t.me/justacryptocoin">Поддержка</a>
+       <p class="company-div">© 2022, Gare.g, Inc. или ее филиалы</p>
    </div>
     <script>
         window.onload = () => {
